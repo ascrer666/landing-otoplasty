@@ -1126,40 +1126,10 @@ th {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-.ba-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-}
-
-.ba-image {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.ba-image img {
+.ba-combined-image {
     width: 100%;
-    aspect-ratio: 3 / 4;
-    object-fit: cover;
     border-radius: 8px;
-}
-
-.ba-label {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: var(--quartz-dark-gray);
-    color: white;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.ba-label.after {
-    background: var(--quartz-turquoise);
+    object-fit: cover;
 }
 
 .ba-caption {
