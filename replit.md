@@ -1,21 +1,42 @@
-# Quartz Clinique Landing Page
+# Quartz Clinique - Kepçe Kulak Estetiği (Otoplasti) Landing Sayfası
 
-## Overview
-This is a static landing page website for Quartz Clinique, a medical aesthetics clinic in Turkey. The site focuses on Q Switch laser treatments, skin care, and tattoo removal services.
+## Genel Bakış
+Bu proje, Quartz Clinique için Kepçe Kulak Ameliyatı (Otoplasti) landing sayfasıdır. Sayfa, kulak estetiği hizmetlerini tanıtmak ve potansiyel hastaları WhatsApp üzerinden iletişime yönlendirmek amacıyla tasarlanmıştır.
 
-## Project Structure
-- `index.html` - Main landing page with sections for services, FAQ, clinic info
-- `styles.css` - All styling for the website
-- `assets/` - Images including clinic photos, treatment photos, and logos
-- `server.py` - Simple Python HTTP server for local development
+## Proje Yapısı
+- `index.html` - Ana landing sayfası (Kepçe Kulak Estetiği içerikleri)
+- `styles.css` - Tüm sayfa stilleri
+- `assets/` - Görseller
+  - `otoplasti-*.jpg` - Otoplasti ile ilgili görseller
+  - `before-after-*.jpg` - Öncesi/sonrası görseller
+  - `klinik*.png` - Klinik fotoğrafları
+  - `logo.png` - Quartz Clinique logosu
+- `server.py` - Geliştirme için basit Python HTTP sunucusu
 
-## Development
-The site runs on a simple Python HTTP server on port 5000.
+## Anahtar Kelimeler (SEO)
+Sayfada doğal şekilde kullanılan anahtar kelimeler:
+- kepçe kulak ameliyatı
+- kepçe kulak estetiği
+- otoplasti ameliyatı
+- kulak estetiği
+- kepçe kulak düzeltilmesi
+- kepçe kulak operasyonu
+- kepçe kulak ameliyatı nasıl yapılır
+- kepçe kulak ameliyatı fiyat
+- kepçe kulak ameliyatı iyileşme süresi
+- kepçe kulak ameliyatı kaç yaşında yapılır (sadece yetişkinler)
+- kepçe kulak ameliyatı iz kalır mı?
 
-### Running Locally
+## Önemli Notlar
+- Sadece yetişkin hastalara yönelik içerik (çocuk/bebek yok)
+- WhatsApp numarası: +90 544 843 9717
+- Tüm kesiler kulak arkasına yapılır - iz kalmaz
+
+## Geliştirme
 ```bash
 python server.py
 ```
+Sunucu port 5000'de çalışır.
 
 ## Deployment
-This is a static site deployment. The site can be deployed using Replit's static deployment feature which serves the HTML, CSS, and assets directly.
+Statik site olarak deploy edilir. Public directory: `.`

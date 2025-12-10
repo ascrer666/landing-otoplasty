@@ -1095,3 +1095,177 @@ th {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* Before After Section */
+.before-after {
+    padding: 60px 0;
+    background: var(--quartz-light-gray);
+    text-align: center;
+}
+
+.ba-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+@media (min-width: 768px) {
+    .ba-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.ba-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.ba-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.ba-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.ba-image img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.ba-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--quartz-dark-gray);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.ba-label.after {
+    background: var(--quartz-turquoise);
+}
+
+.ba-caption {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, var(--quartz-turquoise) 0%, #00878a 100%);
+    text-align: center;
+    color: white;
+}
+
+.cta-section h2 {
+    color: white;
+    margin-bottom: 16px;
+}
+
+.cta-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+.cta-section .btn-primary {
+    background: white;
+    color: var(--quartz-turquoise);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cta-section .btn-primary:hover {
+    background: var(--quartz-dark-gray);
+    color: white;
+}
+
+/* Footer */
+.site-footer {
+    background: var(--quartz-dark-gray);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.site-footer p {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.footer-address {
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+/* Sticky CTA */
+.sticky-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 0;
+    z-index: 999;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.sticky-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.call-btn {
+    background: var(--quartz-dark-gray);
+    color: white;
+}
+
+.call-btn:hover {
+    background: #1a2f3d;
+}
+
+.whatsapp-btn {
+    background: #25D366;
+    color: white;
+}
+
+.whatsapp-btn:hover {
+    background: #1fb855;
+}
+
+.sticky-icon {
+    font-size: 18px;
+}
+
+/* Accordion open state */
+.accordion-item.open .accordion-header::after {
+    content: '-';
+}
+
+.accordion-item.open .accordion-content {
+    max-height: 500px;
+}
