@@ -20,9 +20,8 @@
 body {
     font-family: var(--font-family);
     color: var(--text-color);
-    background-color: var(--soft-white);
+    background-color: var(--quartz-dark-gray);
     line-height: 1.7;
-    padding-bottom: 110px;
     font-size: 18px;
 }
 
