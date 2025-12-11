@@ -57,19 +57,20 @@
                     <button class="hero-nav hero-prev" aria-label="Önceki">&lt;</button>
                     <div class="hero-carousel">
                         <div class="hero-slide">
-                            <img src="assets/otoplasty-kepçe-kulak-nedir.webp" alt="Kepçe kulak ameliyatı öncesi ve sonrası">
+                            <img src="assets/otoplasty/Kepçe Kulak 0019AQ (Paylaşım İzni Alınmıştır) .webp"
+                                alt="Kepçe kulak ameliyatı öncesi ve sonrası">
                         </div>
                         <div class="hero-slide">
-                            <img src="assets/otoplasty/Kepçe Kulak 0019AQ (Paylaşım İzni Alınmıştır) .webp" alt="Kepçe kulak ameliyatı öncesi ve sonrası">
+                            <img src="assets/otoplasty/Kepçe Kulak 0027DQ (Paylaşım İzni Alınmıştır).webp"
+                                alt="Kepçe kulak ameliyatı öncesi ve sonrası">
                         </div>
                         <div class="hero-slide">
-                            <img src="assets/otoplasty/Kepçe Kulak 0027DQ (Paylaşım İzni Alınmıştır).webp" alt="Kepçe kulak ameliyatı öncesi ve sonrası">
+                            <img src="assets/otoplasty/Kepçe Kulak 0032DQ (Paylaşım İzni Alınmıştır) (2).webp"
+                                alt="Kepçe kulak ameliyatı öncesi ve sonrası">
                         </div>
                         <div class="hero-slide">
-                            <img src="assets/otoplasty/Kepçe Kulak 0032DQ (Paylaşım İzni Alınmıştır) (2).webp" alt="Kepçe kulak ameliyatı öncesi ve sonrası">
-                        </div>
-                        <div class="hero-slide">
-                            <img src="assets/otoplasty/Kepçe Kulak 007D (Paylaşım İzni Alınmıştır).webp" alt="Kepçe kulak ameliyatı öncesi ve sonrası">
+                            <img src="assets/otoplasty/Kepçe Kulak 007D (Paylaşım İzni Alınmıştır).webp"
+                                alt="Kepçe kulak ameliyatı öncesi ve sonrası">
                         </div>
                     </div>
                     <button class="hero-nav hero-next" aria-label="Sonraki">&gt;</button>
@@ -606,6 +607,17 @@
             });
         });
 
+        // Lightbox for hero carousel images
+        const heroImages = document.querySelectorAll('.hero-slide img');
+        heroImages.forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
         if (lightboxClose) {
             lightboxClose.addEventListener('click', () => {
                 lightbox.classList.remove('active');
@@ -642,7 +654,7 @@
             dot.classList.add('hero-dot');
             if (index === 0) dot.classList.add('active');
             dot.addEventListener('click', () => {
-                heroSlides[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+                heroSlides[index].scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'start'});
             });
             heroDotsContainer.appendChild(dot);
         });
@@ -662,12 +674,12 @@
         // Navigation buttons
         heroPrevBtn.addEventListener('click', () => {
             const slideWidth = heroSlides[0].offsetWidth;
-            heroCarousel.scrollBy({ left: -slideWidth, behavior: 'smooth' });
+            heroCarousel.scrollBy({left: -slideWidth, behavior: 'smooth'});
         });
 
         heroNextBtn.addEventListener('click', () => {
             const slideWidth = heroSlides[0].offsetWidth;
-            heroCarousel.scrollBy({ left: slideWidth, behavior: 'smooth' });
+            heroCarousel.scrollBy({left: slideWidth, behavior: 'smooth'});
         });
     </script>
 

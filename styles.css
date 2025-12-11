@@ -186,7 +186,8 @@ img {
 .hero-carousel-wrapper {
     position: relative;
     margin-top: 35px;
-    max-width: 520px;
+    width: 100%;
+    max-width: 600px;
 }
 
 .hero-carousel {
@@ -216,6 +217,12 @@ img {
     height: auto;
     display: block;
     border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hero-slide img:hover {
+    transform: scale(1.01);
 }
 
 .hero-nav {
