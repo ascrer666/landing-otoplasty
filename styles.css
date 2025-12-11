@@ -404,7 +404,6 @@ img {
 .bleaching-image img {
     width: 100%;
     border-radius: var(--border-radius);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
 .bleaching-content {
