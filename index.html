@@ -53,9 +53,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <img src="assets/otoplasty-kepçe-kulak-nedir.webp" alt="Kepçe kulak ameliyatı öncesi ve sonrası"
-                        class="hero-img-contain">
+                <div class="hero-carousel-wrapper">
+                    <button class="hero-nav hero-prev" aria-label="Önceki">&lt;</button>
+                    <div class="hero-carousel">
+                        <div class="hero-slide">
+                            <img src="assets/otoplasty-kepçe-kulak-nedir.webp" alt="Kepçe kulak ameliyatı öncesi ve sonrası">
+                        </div>
+                        <div class="hero-slide">
+                            <img src="assets/otoplasty/Kepçe Kulak 0019AQ (Paylaşım İzni Alınmıştır) .webp" alt="Kepçe kulak ameliyatı öncesi ve sonrası">
+                        </div>
+                        <div class="hero-slide">
+                            <img src="assets/otoplasty/Kepçe Kulak 0027DQ (Paylaşım İzni Alınmıştır).webp" alt="Kepçe kulak ameliyatı öncesi ve sonrası">
+                        </div>
+                        <div class="hero-slide">
+                            <img src="assets/otoplasty/Kepçe Kulak 0032DQ (Paylaşım İzni Alınmıştır) (2).webp" alt="Kepçe kulak ameliyatı öncesi ve sonrası">
+                        </div>
+                        <div class="hero-slide">
+                            <img src="assets/otoplasty/Kepçe Kulak 007D (Paylaşım İzni Alınmıştır).webp" alt="Kepçe kulak ameliyatı öncesi ve sonrası">
+                        </div>
+                    </div>
+                    <button class="hero-nav hero-next" aria-label="Sonraki">&gt;</button>
+                    <div class="hero-dots"></div>
                 </div>
             </div>
         </section>
@@ -152,29 +170,24 @@
                 <p class="subheadline">Otoplasti ameliyatı ile elde edilen doğal ve kalıcı sonuçlarımızdan örnekler. Her
                     vaka kişiye özel değerlendirilir.</p>
 
-                <div class="ba-carousel-wrapper">
-                    <button class="ba-nav ba-prev" aria-label="Önceki">&lt;</button>
-                    <div class="ba-carousel">
-                        <div class="ba-card">
-                            <img src="assets/otoplasty/Kepçe Kulak 0019AQ (Paylaşım İzni Alınmıştır) .webp"
-                                alt="Kepçe kulak ameliyatı öncesi ve sonrası" class="ba-combined-image">
-                        </div>
-                        <div class="ba-card">
-                            <img src="assets/otoplasty/Kepçe Kulak 0027DQ (Paylaşım İzni Alınmıştır).webp"
-                                alt="Kepçe kulak ameliyatı öncesi ve sonrası" class="ba-combined-image">
-                        </div>
-                        <div class="ba-card">
-                            <img src="assets/otoplasty/Kepçe Kulak 0032DQ (Paylaşım İzni Alınmıştır) (2).webp"
-                                alt="Kepçe kulak ameliyatı öncesi ve sonrası" class="ba-combined-image">
-                        </div>
-                        <div class="ba-card">
-                            <img src="assets/otoplasty/Kepçe Kulak 007D (Paylaşım İzni Alınmıştır).webp"
-                                alt="Kepçe kulak ameliyatı öncesi ve sonrası" class="ba-combined-image">
-                        </div>
+                <div class="ba-grid">
+                    <div class="ba-card">
+                        <img src="assets/otoplasty/Kepçe Kulak 0019AQ (Paylaşım İzni Alınmıştır) .webp"
+                            alt="Kepçe kulak ameliyatı öncesi ve sonrası" class="ba-combined-image">
                     </div>
-                    <button class="ba-nav ba-next" aria-label="Sonraki">&gt;</button>
+                    <div class="ba-card">
+                        <img src="assets/otoplasty/Kepçe Kulak 0027DQ (Paylaşım İzni Alınmıştır).webp"
+                            alt="Kepçe kulak ameliyatı öncesi ve sonrası" class="ba-combined-image">
+                    </div>
+                    <div class="ba-card">
+                        <img src="assets/otoplasty/Kepçe Kulak 0032DQ (Paylaşım İzni Alınmıştır) (2).webp"
+                            alt="Kepçe kulak ameliyatı öncesi ve sonrası" class="ba-combined-image">
+                    </div>
+                    <div class="ba-card">
+                        <img src="assets/otoplasty/Kepçe Kulak 007D (Paylaşım İzni Alınmıştır).webp"
+                            alt="Kepçe kulak ameliyatı öncesi ve sonrası" class="ba-combined-image">
+                    </div>
                 </div>
-                <div class="ba-dots"></div>
 
                 <a href="https://wa.me/905448439717?text=Kepçe%20kulak%20ameliyatı%20öncesi%20sonrası%20görmek%20istiyorum."
                     class="btn btn-secondary btn-sm">Daha Fazla Sonuç Görün</a>
@@ -616,45 +629,45 @@
             }
         });
 
-        // Before/After Carousel
-        const carousel = document.querySelector('.ba-carousel');
-        const cards = document.querySelectorAll('.ba-card');
-        const prevBtn = document.querySelector('.ba-prev');
-        const nextBtn = document.querySelector('.ba-next');
-        const dotsContainer = document.querySelector('.ba-dots');
+        // Hero Carousel
+        const heroCarousel = document.querySelector('.hero-carousel');
+        const heroSlides = document.querySelectorAll('.hero-slide');
+        const heroPrevBtn = document.querySelector('.hero-prev');
+        const heroNextBtn = document.querySelector('.hero-next');
+        const heroDotsContainer = document.querySelector('.hero-dots');
 
         // Create dots
-        cards.forEach((_, index) => {
+        heroSlides.forEach((_, index) => {
             const dot = document.createElement('button');
-            dot.classList.add('ba-dot');
+            dot.classList.add('hero-dot');
             if (index === 0) dot.classList.add('active');
             dot.addEventListener('click', () => {
-                cards[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+                heroSlides[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
             });
-            dotsContainer.appendChild(dot);
+            heroDotsContainer.appendChild(dot);
         });
 
-        const dots = document.querySelectorAll('.ba-dot');
+        const heroDots = document.querySelectorAll('.hero-dot');
 
         // Update active dot on scroll
-        carousel.addEventListener('scroll', () => {
-            const scrollLeft = carousel.scrollLeft;
-            const cardWidth = cards[0].offsetWidth + 20;
-            const activeIndex = Math.round(scrollLeft / cardWidth);
-            dots.forEach((dot, i) => {
+        heroCarousel.addEventListener('scroll', () => {
+            const scrollLeft = heroCarousel.scrollLeft;
+            const slideWidth = heroSlides[0].offsetWidth;
+            const activeIndex = Math.round(scrollLeft / slideWidth);
+            heroDots.forEach((dot, i) => {
                 dot.classList.toggle('active', i === activeIndex);
             });
         });
 
         // Navigation buttons
-        prevBtn.addEventListener('click', () => {
-            const cardWidth = cards[0].offsetWidth + 20;
-            carousel.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+        heroPrevBtn.addEventListener('click', () => {
+            const slideWidth = heroSlides[0].offsetWidth;
+            heroCarousel.scrollBy({ left: -slideWidth, behavior: 'smooth' });
         });
 
-        nextBtn.addEventListener('click', () => {
-            const cardWidth = cards[0].offsetWidth + 20;
-            carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        heroNextBtn.addEventListener('click', () => {
+            const slideWidth = heroSlides[0].offsetWidth;
+            heroCarousel.scrollBy({ left: slideWidth, behavior: 'smooth' });
         });
     </script>
 
