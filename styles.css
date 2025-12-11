@@ -1108,14 +1108,14 @@ th {
 
 .ba-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     margin: 40px 0;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 600px) {
     .ba-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 
