@@ -1239,3 +1239,57 @@ th {
 .accordion-item.open .accordion-content {
     max-height: 500px;
 }
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10000;
+    line-height: 1;
+    padding: 10px;
+}
+
+.lightbox-close:hover {
+    color: var(--quartz-turquoise);
+}
+
+.ba-combined-image {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.ba-combined-image:hover {
+    transform: scale(1.02);
+}
