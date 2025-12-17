@@ -1,36 +1,38 @@
-# Quartz Clinique - Kepçe Kulak Estetiği (Otoplasti) Landing Sayfası
+# Quartz Clinique - Sıvı Yüz Germe Landing Sayfası
 
 ## Genel Bakış
-Bu proje, Quartz Clinique için Kepçe Kulak Ameliyatı (Otoplasti) landing sayfasıdır. Sayfa, kulak estetiği hizmetlerini tanıtmak ve potansiyel hastaları WhatsApp üzerinden iletişime yönlendirmek amacıyla tasarlanmıştır.
+Bu proje, Quartz Clinique için Sıvı Yüz Germe (Liquid Facelift) landing sayfasıdır. Sayfa, ameliyatsız yüz germe hizmetlerini tanıtmak ve potansiyel hastaları WhatsApp üzerinden iletişime yönlendirmek amacıyla tasarlanmıştır.
 
 ## Proje Yapısı
-- `index.html` - Ana landing sayfası (Kepçe Kulak Estetiği içerikleri)
+- `index.html` - Ana landing sayfası (Sıvı Yüz Germe içerikleri)
 - `styles.css` - Tüm sayfa stilleri
 - `assets/` - Görseller
-  - `otoplasti-*.jpg` - Otoplasti ile ilgili görseller
-  - `before-after-*.jpg` - Öncesi/sonrası görseller
-  - `klinik*.png` - Klinik fotoğrafları
   - `logo.png` - Quartz Clinique logosu
+  - `klinik*.png` - Klinik fotoğrafları
+  - `sivi-yuz-germe-*.jpg` - Sıvı yüz germe görselleri (eklenecek)
 - `server.py` - Geliştirme için basit Python HTTP sunucusu
 
 ## Anahtar Kelimeler (SEO)
 Sayfada doğal şekilde kullanılan anahtar kelimeler:
-- kepçe kulak ameliyatı
-- kepçe kulak estetiği
-- otoplasti ameliyatı
-- kulak estetiği
-- kepçe kulak düzeltilmesi
-- kepçe kulak operasyonu
-- kepçe kulak ameliyatı nasıl yapılır
-- kepçe kulak ameliyatı fiyat
-- kepçe kulak ameliyatı iyileşme süresi
-- kepçe kulak ameliyatı kaç yaşında yapılır (sadece yetişkinler)
-- kepçe kulak ameliyatı iz kalır mı?
+- sıvı yüz germe
+- ameliyatsız yüz germe
+- liquid facelift
+- cerrahi olmayan yüz germe
+- sıvı yüz germe nedir
+- ameliyatsız yüz germe nedir
+- dolgu ile yüz germe
+- yüz gençleştirme yöntemleri
+- yüz dolgusu
+- medikal estetik yüz
+- cilt gençleştirme
+- sıvı yüz germe fiyatları
+- ameliyatsız yüz germe fiyatları
 
 ## Önemli Notlar
-- Sadece yetişkin hastalara yönelik içerik (çocuk/bebek yok)
+- Telefon numarası: +90 212 241 46 24
 - WhatsApp numarası: +90 544 843 9717
-- Tüm kesiler kulak arkasına yapılır - iz kalmaz
+- Before/after bölümü bulunmuyor
+- İki adet YouTube video alanı placeholder olarak hazır
 
 ## Geliştirme
 ```bash
@@ -39,4 +41,7 @@ python server.py
 Sunucu port 5000'de çalışır.
 
 ## Deployment
-Statik site olarak deploy edilir. Public directory: `.`
+Sunucuya gönderilmesi gereken dosyalar:
+- `index.html`
+- `styles.css`
+- `assets/` klasörü
