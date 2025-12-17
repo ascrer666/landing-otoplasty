@@ -176,6 +176,7 @@ img {
     color: var(--quartz-dark-gray);
     margin-bottom: 32px;
     line-height: 1.6;
+    text-align: center;
 }
 
 .trust-badges {
@@ -973,9 +974,19 @@ th {
 }
 
 /* Contact */
-.contact {
+.contact,
+.contact-section {
     padding: 50px 0;
-    background: #f9fafb;
+    background: var(--quartz-dark-gray);
+    color: white;
+}
+
+.contact-section h2 {
+    color: white;
+}
+
+.contact-section .subheadline {
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .contact-grid {
@@ -983,6 +994,48 @@ th {
     grid-template-columns: 1fr;
     gap: 20px;
     align-items: start;
+}
+
+.contact-info {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-icon {
+    font-size: 20px;
+}
+
+.contact-item strong {
+    display: block;
+    color: white;
+    margin-bottom: 4px;
+}
+
+.contact-item p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-item a {
+    color: var(--quartz-turquoise);
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
 }
 
 .contact-card,
