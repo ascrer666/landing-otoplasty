@@ -679,11 +679,8 @@ th {
 }
 
 .reason-card {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 12px;
-    align-items: start;
-    padding: 16px 18px;
+    display: block;
+    padding: 18px 20px;
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 14px;
@@ -691,7 +688,7 @@ th {
 
 .reason-card h4 {
     color: #00d4aa;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     font-size: 17px;
 }
 
@@ -699,6 +696,7 @@ th {
     margin-bottom: 0;
     color: rgba(255, 255, 255, 0.75);
     font-size: 15px;
+    line-height: 1.5;
 }
 
 .reason-icon {
