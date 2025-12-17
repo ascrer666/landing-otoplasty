@@ -810,6 +810,14 @@ th {
 }
 
 /* FAQ */
+.faq-section {
+    padding: 80px 0 50px 0;
+}
+
+.faq-section h2 {
+    margin-top: 20px;
+}
+
 .faq {
     padding: 50px 0;
 }
