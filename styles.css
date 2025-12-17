@@ -133,6 +133,20 @@ img {
     color: white;
 }
 
+.btn-outline-light {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 14px 32px;
+    font-size: 17px;
+    display: inline-block;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: var(--quartz-turquoise);
+}
+
 .btn-sm {
     padding: 12px 24px;
     font-size: 16px;
